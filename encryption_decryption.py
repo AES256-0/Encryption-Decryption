@@ -51,4 +51,4 @@ def aesccm_mode_decryption(filename,key):
     fd.close()
 
 if __name__=="__main__":
-    aesccm_mode_encryption(256,"ccnp","ccna_keys")
+    pass
