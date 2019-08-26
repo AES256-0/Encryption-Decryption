@@ -1,4 +1,4 @@
-About: A simple encryption-decryption tool that will encrypt your file using AES(Advanced Encryption Algorithm) in CCM mode.
+About: A simple encryption-decryption tool that will encrypt your file using AES(Advanced Encryption Algorithm) in CCM mode and GCM mode.
        It is written in Python3.7.
 
 Requirements: Python3.7 need to be installed on your system.
