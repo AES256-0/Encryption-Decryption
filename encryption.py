@@ -5,7 +5,14 @@ def result():
     name=str(filename.get())
     length=int(keylength.get())
     key=str(keyfile.get())
-    encryption_decryption.aesccm_mode_encryption(length,name,key)
+    algo_name=gcm_ccm.get()
+    if algo_name=="AESCCM":
+        encryption_decryption.aesccm_mode_encryption(length,name,key)
+    elif (algo_name=="AESGCM"):
+        encryption_decryption.aesgcm_mode_encryption(length,name,key)
+    else:
+        print("Provide the correct algoriithm")
+
 
 
 root=tkinter.Tk()
@@ -30,7 +37,13 @@ label3.place(x=0,y=40)
 keyfile=tkinter.Entry(root,width=30)
 keyfile.place(x=200,y=40)
 
+label4=tkinter.Label(root,text="AESGCM OR AESCCM:")
+label4.place(x=0,y=60)
+
+gcm_ccm=tkinter.Entry(root,width=30)
+gcm_ccm.place(x=200,y=60)
+
 button=tkinter.Button(root,text="Encrypt",command=result,bg="grey",fg="black")
-button.place(x=200,y=80)
+button.place(x=200,y=100)
 
 root.mainloop()
