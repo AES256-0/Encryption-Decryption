@@ -11,7 +11,7 @@ How it works: For encryption: simply run,
                               
 Future features: Other Algorithms will be added.
 
-For any queries, contact me at: ashishbeckh7@gmail.com
+
                              
 
               
